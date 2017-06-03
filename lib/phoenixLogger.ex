@@ -6,8 +6,6 @@ defmodule PhoenixLogger do
   def start(_type, _args) do
     import Supervisor.Spec
 
-    IO.inspect Application.get_env(:kafka_ex, :disable_default_worker), label: "Get Env kafkaEx"
-
     # Define workers and child supervisors to be supervised
     children = [
       # Start the endpoint when the application starts
