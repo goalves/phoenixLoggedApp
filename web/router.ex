@@ -1,5 +1,6 @@
 defmodule PhoenixLogger.Router do
   use PhoenixLogger.Web, :router
+  use Plug.ErrorHandler
 
   pipeline :browser do
     plug :accepts, ["json"]
@@ -17,11 +18,9 @@ defmodule PhoenixLogger.Router do
     post "/message", MessageController, :redirector
   end
 
-  defp handle_errors(conn, %{kind: level, reason: reason, stack: stacktrace}) do
+  defp handle_errors(conn, _) do
     response = ExKafkaLogger.HttpError.template(conn.status)
     json(conn, response)
   end
-
-  defp handle_errors(_, _), do: nil
 
 end

@@ -1,6 +1,6 @@
 %{"cowboy": {:hex, :cowboy, "1.1.2", "61ac29ea970389a88eca5a65601460162d370a70018afe6f949a29dca91f3bb0", [:rebar3], [{:cowlib, "~> 1.0.2", [hex: :cowlib, repo: "hexpm", optional: false]}, {:ranch, "~> 1.3.2", [hex: :ranch, repo: "hexpm", optional: false]}], "hexpm"},
   "cowlib": {:hex, :cowlib, "1.0.2", "9d769a1d062c9c3ac753096f868ca121e2730b9a377de23dec0f7e08b1df84ee", [:make], [], "hexpm"},
-  "ex_kafka_logger": {:git, "https://github.com/jeffhsta/ExKafkaLogger.git", "701b89df00a2bb443f8b04a2122f59b650b66134", []},
+  "ex_kafka_logger": {:hex, :ex_kafka_logger, "0.2.0", "f5baacefb05dc6be56a498958876c2be12d23a275ddbd3558c2884863ab3f5f7", [:mix], [{:kafka_ex, "~> 0.6.5", [hex: :kafka_ex, repo: "hexpm", optional: false]}, {:plug, "~> 1.3", [hex: :plug, repo: "hexpm", optional: false]}, {:poison, "~> 2.0", [hex: :poison, repo: "hexpm", optional: false]}], "hexpm"},
   "fs": {:hex, :fs, "0.9.2", "ed17036c26c3f70ac49781ed9220a50c36775c6ca2cf8182d123b6566e49ec59", [:rebar], [], "hexpm"},
   "gettext": {:hex, :gettext, "0.13.1", "5e0daf4e7636d771c4c71ad5f3f53ba09a9ae5c250e1ab9c42ba9edccc476263", [:mix], [], "hexpm"},
   "kafka_ex": {:hex, :kafka_ex, "0.6.5", "01c160cbfbe67f6dd60da446b7e7e43f3e51ceb943478f9f7ac425ac0f925b18", [:mix], [], "hexpm"},
